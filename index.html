@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Serviços digitais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Soluções Digitais</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Transformando ideias em soluções digitais</h1>
+        <p>Criação de sites, apps e design moderno para quem quer se destacar online.</p>
+        <a href="#contato" class="cta-btn">Fale conosco</a>
+    </section>
+
+    <section id ="sobre" class="sobre">
+        <h2>Sobre</h2>
+        <p>
+            Somos uma equipe especializada em desenvolvimento e design, combinando tecnologia e criatividade para entregar resultados de alta qualidade, de forma ágil e eficiente.
+        </p>
+
+                <ul class="diferenciais">
+            <li>Design visual moderno e personalizado gerado por IA</li>
+            <li>Textos claros e objetivos, criados com auxílio de IA</li>
+            <li>Processo rápido de entrega</li>
+        </ul>
+    </section>
+    
+    <section id ="servicos" class="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-lista">
+            <div class="servico"> <!-- serviço de desenvolvimento web -->
+                <h3>Desenvolvimento Web</h3>
+                <p>Sites responsivos, seguros e otimizados para o usuário.</p>
+            </div>
+
+            <div class="servico"> <!-- serviço de design de Interface e UX -->
+                <h3>Design de Interface e UX</h3>
+                <p>Layouts modernos e intuitivos para experiências memoráveis</p>
+            </div>
+
+            <div class="servico">
+                <h3>Landing Pages e Portfólios Digitais</h3>
+                <p>Páginas de alta conversão e portfólios para destacar seu negócio</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio | Projetos</h2>
+        <div class="projetos">
+            <div class="projeto">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60" alt="Loja Virtual Express">
+                <h4>Landing Page para Evento Digital</h4>
+                <p>Página personalizada com formulário de inscrição e integração social.</p>
+            </div>
+            <div class="projeto">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=60" alt="Portfólio Criador de Conteúdo">
+                <h4>Portfólio para Criador de Conteúdo</h4>
+                <p>Site pessoal com blog integrado e identidade visual exclusiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="contato-sucesso" class="hidden">Mensagem enviada com sucesso!</div>
+        <div class="contato-info">
+            <p>Email: contato@seudominio.com</p>
+            <p>Instagram: @seudominio</p>
+            <p>LinkedIn: linkedin.com/in/seudominio</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Soluções Digitais. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
