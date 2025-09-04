@@ -1,0 +1,219 @@
+:root {
+    --cor-primaria: #3a6cf4;
+    --cor-secundaria: #f4f6fc;
+    --cor-texto: #222;
+    --cor-cta: #10b981;
+    --cor-escura: #1e293b;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+header {
+    background: var(--cor-escura);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--cor-primaria);
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+    background: linear-gradient(90deg, #f4f6fc 60%, #e0e7ff 100%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background: var(--cor-cta);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(58, 108, 244, 0.08);
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: var(--cor-primaria);
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+.sobre h2, .servicos h2,
+.portfolio h2, .contato h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+.sobre p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.diferenciais {
+    padding-left:1.2rem;
+    margin-bottom: 0;
+}
+.diferenciais li {
+    margin-bottom: 0.5rem;
+}
+
+.servicos-lista {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.servico {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(58,108,244, 0.07);
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+.servico h3 {
+    color: var(--cor-cta);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .projetos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.projeto {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(58,108,244, 0.07);
+    flex: 1 1 250px;
+    min-width: 250px;
+    padding: 1rem;
+    text-align: center;
+}
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.projeto h4 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.contato input,
+.contato textarea {
+    padding: 0.8rem;
+    border: 1px solid #cdd2db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+.contato textarea {
+    padding: 0.8rem;
+    border: 1px solid #cdd2db;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contato button {
+    background: var(--cor-cta);
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contato button:hover {
+    background: var(--cor-primaria);
+}
+#contato-sucesso {
+    color: var(--cor-cta);
+    background: #e6fff6;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.hidden {
+    display: none;
+}
+.contato-info p {
+    margin: 0.2rem 0;
+    font-size: 0.99rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        gap: 1rem;
+    }
+
+    .servicos-lista, .portfolio .projetos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
