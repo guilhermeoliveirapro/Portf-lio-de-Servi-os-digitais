@@ -1,99 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Serviços digitais</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Neovate | Inovação</title>
+  <meta name="description" content="Criação de sites, apps, landing pages e design digital moderno para destacar sua marca online.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Soluções Digitais</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <h1>Transformando ideias em soluções digitais</h1>
-        <p>Criação de sites, apps e design moderno para quem quer se destacar online.</p>
-        <a href="#contato" class="cta-btn">Fale conosco</a>
+  <header>
+    <nav>
+      <div class="logo">NEOVATE</div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero animar">
+      <h1>Transformando ideias em soluções digitais</h1>
+      <p>Criação de sites, apps e design moderno para quem quer se destacar online.</p>
+      <a href="#contato" class="cta-btn animar-btn">Fale conosco</a>
     </section>
 
-    <section id ="sobre" class="sobre">
-        <h2>Sobre</h2>
-        <p>
-            Somos uma equipe especializada em desenvolvimento e design, combinando tecnologia e criatividade para entregar resultados de alta qualidade, de forma ágil e eficiente.
-        </p>
-
-                <ul class="diferenciais">
-            <li>Design visual moderno e personalizado gerado por IA</li>
-            <li>Textos claros e objetivos, criados com auxílio de IA</li>
-            <li>Processo rápido de entrega</li>
-        </ul>
+    <section id="sobre" class="sobre animar">
+      <h2>Sobre</h2>
+      <p>
+        Somos uma equipe especializada em desenvolvimento e design, combinando tecnologia e criatividade para entregar resultados de alta qualidade, de forma ágil e eficiente.
+      </p>
+      <ul class="diferenciais">
+        <li>Design visual moderno e personalizado gerado por IA</li>
+        <li>Textos claros e objetivos, criados com auxílio de IA</li>
+        <li>Processo rápido de entrega</li>
+      </ul>
     </section>
-    
-    <section id ="servicos" class="servicos">
-        <h2>Serviços</h2>
-        <div class="servicos-lista">
-            <div class="servico"> <!-- serviço de desenvolvimento web -->
-                <h3>Desenvolvimento Web</h3>
-                <p>Sites responsivos, seguros e otimizados para o usuário.</p>
-            </div>
 
-            <div class="servico"> <!-- serviço de design de Interface e UX -->
-                <h3>Design de Interface e UX</h3>
-                <p>Layouts modernos e intuitivos para experiências memoráveis</p>
-            </div>
-
-            <div class="servico">
-                <h3>Landing Pages e Portfólios Digitais</h3>
-                <p>Páginas de alta conversão e portfólios para destacar seu negócio</p>
-            </div>
+    <section id="servicos" class="servicos animar">
+      <h2>Serviços</h2>
+      <div class="servicos-lista">
+        <div class="servico card-anim">
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites responsivos, seguros e otimizados para buscadores.</p>
         </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>Portfólio | Projetos</h2>
-        <div class="projetos">
-            <div class="projeto">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=60" alt="Loja Virtual Express">
-                <h4>Landing Page para Evento Digital</h4>
-                <p>Página personalizada com formulário de inscrição e integração social.</p>
-            </div>
-            <div class="projeto">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=60" alt="Portfólio Criador de Conteúdo">
-                <h4>Portfólio para Criador de Conteúdo</h4>
-                <p>Site pessoal com blog integrado e identidade visual exclusiva.</p>
-            </div>
+        <div class="servico card-anim">
+          <h3>Design de Interface e UX</h3>
+          <p>Layouts modernos e intuitivos para experiências memoráveis.</p>
         </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <form id="form-contato">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu email" required>
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="contato-sucesso" class="hidden">Mensagem enviada com sucesso!</div>
-        <div class="contato-info">
-            <p>Email: contato@seudominio.com</p>
-            <p>Instagram: @seudominio</p>
-            <p>LinkedIn: linkedin.com/in/seudominio</p>
+        <div class="servico card-anim">
+          <h3>Landing Pages e Portfólios Digitais</h3>
+          <p>Páginas de alta conversão e portfólios para destacar seu negócio.</p>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Soluções Digitais. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+    <section id="portfolio" class="portfolio animar">
+      <h2>Portfólio / Projetos</h2>
+      <div class="projetos">
+        <div class="projeto card-anim">
+            <img 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" 
+                alt="Loja Virtual Express | E-commerce moderno"
+                loading="lazy" width="400" height="250">
+            <h4>Loja Virtual Express</h4>
+            <p>E-commerce com design moderno, integração de pagamentos e painel intuitivo.</p>
+        </div>
+
+        <div class="projeto card-anim">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+            alt="Landing Page para Evento Digital"
+            loading="lazy" width="400" height="250">
+            <h4>Landing Page para Evento Digital</h4>
+            <p>Página personalizada com formulário de inscrição e integração social.</p>
+        </div>
+
+        <div class="projeto card-anim">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
+            alt="Portfólio Digital para Criador de Conteúdo"
+            loading="lazy" width="400" height="250">
+          <h4>Portfólio para Criador de Conteúdo</h4>
+          <p>Site pessoal com blog integrado e identidade visual exclusiva.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato animar">
+      <h2>Contato</h2>
+      <form id="form-contato" action="https://formspree.io/f/mldwojbl" method="POST"> 
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="contato-sucesso" class="hidden" role="alert">Mensagem enviada com sucesso!</div>
+
+      <div class="contato-info">
+        <p>Email: <a href="mailto:contato@seudominio.com">contato@seudominio.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/seudominio" target="_blank">@seudominio</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/seudominio" target="_blank">linkedin.com/in/seudominio</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animar">
+    <p>&copy; 2025 Soluções Digitais. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
