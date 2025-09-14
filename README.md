@@ -10,8 +10,7 @@ Aqui você encontrará projetos e referências que mostram como cada serviço po
 
 ## Sobre o Autor
 
-Desenvolvido por [@guilhermeoliveirapro](https://github.com/guilhermeoliveirapro), apaixonado por tecnologia e design, sempre em busca de novas tendências para criar soluções digitais impactantes.
-
+Desenvolvido por [@guilhermeoliveirapro](https://github.com/guilhermeoliveirapro).
 ---
 
 Sinta-se à vontade para explorar, contribuir ou entrar em contato para mais informações!
